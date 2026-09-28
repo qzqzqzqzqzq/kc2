@@ -1,0 +1,50 @@
+[
+  {
+    "file": "000.png",
+    "source": "vendor\\vggt\\examples\\kitchen\\images\\00.png"
+  },
+  {
+    "file": "001.png",
+    "source": "vendor\\vggt\\examples\\kitchen\\images\\02.png"
+  },
+  {
+    "file": "002.png",
+    "source": "vendor\\vggt\\examples\\kitchen\\images\\04.png"
+  },
+  {
+    "file": "003.png",
+    "source": "vendor\\vggt\\examples\\kitchen\\images\\06.png"
+  },
+  {
+    "file": "004.png",
+    "source": "vendor\\vggt\\examples\\kitchen\\images\\08.png"
+  },
+  {
+    "file": "005.png",
+    "source": "vendor\\vggt\\examples\\kitchen\\images\\10.png"
+  },
+  {
+    "file": "006.png",
+    "source": "vendor\\vggt\\examples\\kitchen\\images\\13.png"
+  },
+  {
+    "file": "007.png",
+    "source": "vendor\\vggt\\examples\\kitchen\\images\\15.png"
+  },
+  {
+    "file": "008.png",
+    "source": "vendor\\vggt\\examples\\kitchen\\images\\17.png"
+  },
+  {
+    "file": "009.png",
+    "source": "vendor\\vggt\\examples\\kitchen\\images\\19.png"
+  },
+  {
+    "file": "010.png",
+    "source": "vendor\\vggt\\examples\\kitchen\\images\\21.png"
+  },
+  {
+    "file": "011.png",
+    "source": "vendor\\vggt\\examples\\kitchen\\images\\24.png"
+  }
+]

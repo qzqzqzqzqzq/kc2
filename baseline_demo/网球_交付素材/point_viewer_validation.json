@@ -1,0 +1,9 @@
+{
+  "total_points": 200000,
+  "default_display_points": 22473,
+  "display_confidence_threshold": 1.01,
+  "rotation_verified": true,
+  "zoom_verified": true,
+  "low_confidence_toggle_verified": true,
+  "offline_self_contained": true
+}

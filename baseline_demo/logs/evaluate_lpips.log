@@ -1,0 +1,71 @@
+D:\vggt311\Lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\vggt311\Lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: D:\vggt311\Lib\site-packages\lpips\weights\v0.1\alex.pth
+工程车 0 LPIPS=0.217993
+工程车 1 LPIPS=0.153266
+工程车 2 LPIPS=0.267768
+工程车 3 LPIPS=0.243420
+工程车 4 LPIPS=0.236316
+工程车 5 LPIPS=0.133425
+工程车 6 LPIPS=0.136725
+工程车 7 LPIPS=0.286391
+工程车 8 LPIPS=0.130142
+工程车 9 LPIPS=0.098225
+工程车 10 LPIPS=0.147738
+工程车 11 LPIPS=0.170093
+网球 0 LPIPS=0.010840
+网球 1 LPIPS=0.009504
+网球 2 LPIPS=0.015346
+网球 3 LPIPS=0.017518
+网球 4 LPIPS=0.010431
+网球 5 LPIPS=0.012276
+网球 6 LPIPS=0.017332
+网球 7 LPIPS=0.012512
+网球 8 LPIPS=0.012719
+[
+  {
+    "scene": "工程车",
+    "run": "kitchen_12",
+    "views": 12,
+    "resolution": [
+      518,
+      350
+    ],
+    "lpips_mean": 0.18512509328623614,
+    "lpips_median": 0.1616796925663948,
+    "lpips_std_population": 0.059450843215968885,
+    "lpips_min": 0.09822497516870499,
+    "lpips_max": 0.2863911986351013,
+    "lowest_view_zero_based": 9,
+    "highest_view_zero_based": 7,
+    "mean_psnr_png_db": 20.75288647705413,
+    "gaussians": 80000,
+    "optimization_steps": 12000,
+    "split": "training",
+    "evaluation_seconds": 1.5986554999999498
+  },
+  {
+    "scene": "网球",
+    "run": "tennis_context_9",
+    "views": 9,
+    "resolution": [
+      518,
+      392
+    ],
+    "lpips_mean": 0.013164173294272687,
+    "lpips_median": 0.012511739507317543,
+    "lpips_std_population": 0.002764418933182609,
+    "lpips_min": 0.009503561072051525,
+    "lpips_max": 0.017518343403935432,
+    "lowest_view_zero_based": 1,
+    "highest_view_zero_based": 3,
+    "mean_psnr_png_db": 36.43942923840915,
+    "gaussians": 200000,
+    "optimization_steps": 12000,
+    "split": "training",
+    "evaluation_seconds": 0.272546300000613
+  }
+]

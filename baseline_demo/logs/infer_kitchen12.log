@@ -1,0 +1,4 @@
+INFERENCE torch.Size([12, 3, 350, 518])
+C:\Users\qzq\Desktop\SDU\开放创新实践2\baseline_demo\vendor\vggt\vggt\models\vggt.py:65: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=False):
+{'scene': 'kitchen', 'views': 12, 'input_files': ['000.png', '001.png', '002.png', '003.png', '004.png', '005.png', '006.png', '007.png', '008.png', '009.png', '010.png', '011.png'], 'resolution': [518, 350], 'points': 80000, 'seconds': 23.53714519999994, 'peak_allocated_gib': 7.950863361358643, 'torch': '2.7.1+cu128', 'gpu': 'NVIDIA GeForce RTX 4060 Laptop GPU', 'seed': 42, 'confidence_threshold': 5, 'ground_truth_used': False}

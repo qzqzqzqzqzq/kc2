@@ -1,0 +1,60 @@
+{
+  "三维重建演示.mp4": {
+    "frames": 540,
+    "fps": 30.0,
+    "duration": 18.0,
+    "size": [
+      1280,
+      720
+    ],
+    "all_frames_decoded": true,
+    "bytes": 37490213
+  },
+  "纯三维场景漫游.mp4": {
+    "frames": 360,
+    "fps": 30.0,
+    "duration": 12.0,
+    "size": [
+      1280,
+      720
+    ],
+    "all_frames_decoded": true,
+    "bytes": 28710651
+  },
+  "01_输入照片.png": {
+    "valid_png": true
+  },
+  "02_点云与相机.png": {
+    "valid_png": true
+  },
+  "03_渲染视角_1.png": {
+    "valid_png": true
+  },
+  "03_渲染视角_2.png": {
+    "valid_png": true
+  },
+  "03_渲染视角_3.png": {
+    "valid_png": true
+  },
+  "04_九个拍摄视角渲染.png": {
+    "valid_png": true
+  },
+  "PPT展示帧_045.png": {
+    "valid_png": true
+  },
+  "PPT展示帧_135.png": {
+    "valid_png": true
+  },
+  "PPT展示帧_315.png": {
+    "valid_png": true
+  },
+  "三维重建演示.gif": {
+    "frames": 180,
+    "duration_ms": 18000,
+    "size": [
+      640,
+      360
+    ]
+  },
+  "checkpoint_sha256_verified": "d15bf50a8615c8225ed48b51ea5cac673d82442ec0309036df555a053253afe0"
+}

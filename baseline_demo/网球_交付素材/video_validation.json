@@ -1,0 +1,22 @@
+{
+  "frames": 540,
+  "fps": 30.0,
+  "duration": 18.0,
+  "size": [
+    1280,
+    720
+  ],
+  "native_render_size": [
+    518,
+    392
+  ],
+  "generation_seconds": 38.53093000000081,
+  "camera_order_zero_based": [
+    5,
+    7,
+    2,
+    8,
+    6
+  ],
+  "source_label": "\u7528\u6237\u5b9e\u62cd\u7f51\u7403"
+}
