@@ -1,0 +1,80 @@
+{
+  "metric": "LPIPS",
+  "backbone": "AlexNet",
+  "calibration_version": "0.1",
+  "learned_linear_weights": true,
+  "random_backbone": false,
+  "spatial": false,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "python": "3.11.6",
+  "torch": "2.7.1+cu128",
+  "torchvision": "0.22.1+cu128",
+  "lpips_package": "0.1.4",
+  "precision": "float32, no autocast, TF32 disabled",
+  "normalization": "RGB uint8 / 127.5 - 1; NCHW; normalize=False",
+  "preprocessing": "No extra resize, alignment, masks or crop. Full saved native frame. Compared with the exact preprocessing output used for optimization.",
+  "split": "training views only",
+  "aggregation": "Arithmetic mean of per-view scalar LPIPS. Population std; no combined cross-scene average.",
+  "backbone_sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02",
+  "linear_weights_sha256": "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0",
+  "backbone_weights_path": "C:\\Users\\qzq\\.cache\\torch\\hub\\checkpoints\\alexnet-owt-7be5be79.pth",
+  "linear_weights_path": "D:\\vggt311\\Lib\\site-packages\\lpips\\weights\\v0.1\\alex.pth",
+  "script_sha256": "28ce3edb055fb30cbe2dc81bb20a8640fa1d2e87c4f30f9625b4820cd8b0b21a",
+  "sanity_checks": [
+    {
+      "scene": "工程车",
+      "identical_images": 0.0,
+      "reference_vs_black": 1.0327739715576172
+    },
+    {
+      "scene": "网球",
+      "identical_images": 0.0,
+      "reference_vs_black": 1.095397710800171
+    }
+  ],
+  "results": [
+    {
+      "scene": "工程车",
+      "run": "kitchen_12",
+      "views": 12,
+      "resolution": [
+        518,
+        350
+      ],
+      "lpips_mean": 0.18512509328623614,
+      "lpips_median": 0.1616796925663948,
+      "lpips_std_population": 0.059450843215968885,
+      "lpips_min": 0.09822497516870499,
+      "lpips_max": 0.2863911986351013,
+      "lowest_view_zero_based": 9,
+      "highest_view_zero_based": 7,
+      "mean_psnr_png_db": 20.75288647705413,
+      "gaussians": 80000,
+      "optimization_steps": 12000,
+      "split": "training",
+      "evaluation_seconds": 1.5986554999999498
+    },
+    {
+      "scene": "网球",
+      "run": "tennis_context_9",
+      "views": 9,
+      "resolution": [
+        518,
+        392
+      ],
+      "lpips_mean": 0.013164173294272687,
+      "lpips_median": 0.012511739507317543,
+      "lpips_std_population": 0.002764418933182609,
+      "lpips_min": 0.009503561072051525,
+      "lpips_max": 0.017518343403935432,
+      "lowest_view_zero_based": 1,
+      "highest_view_zero_based": 3,
+      "mean_psnr_png_db": 36.43942923840915,
+      "gaussians": 200000,
+      "optimization_steps": 12000,
+      "split": "training",
+      "evaluation_seconds": 0.272546300000613
+    }
+  ]
+}

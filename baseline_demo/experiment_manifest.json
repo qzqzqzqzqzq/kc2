@@ -1,0 +1,73 @@
+{
+  "vggt_commit": "a288dd0f14786c93483e45524328726ab7b1b4ce",
+  "gsplat_commit": "937e29912570c372bed6747a5c9bf85fed877bae",
+  "glm_commit": "33b4a621a697a305bc3a7610d290677b96beb181",
+  "checkpoint_repo_commit": "860abec7937da0a4c03c41d3c269c366e82abdf9",
+  "checkpoint_sha256": "d15bf50a8615c8225ed48b51ea5cac673d82442ec0309036df555a053253afe0",
+  "checkpoint_sha256_verified_against_official_header": true,
+  "python": "3.11.6",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "torch": "2.7.1+cu128",
+  "cuda": "12.8",
+  "source": "https://github.com/facebookresearch/vggt/tree/a288dd0f14786c93483e45524328726ab7b1b4ce/examples/kitchen",
+  "inference": {
+    "scene": "kitchen",
+    "views": 12,
+    "input_files": [
+      "000.png",
+      "001.png",
+      "002.png",
+      "003.png",
+      "004.png",
+      "005.png",
+      "006.png",
+      "007.png",
+      "008.png",
+      "009.png",
+      "010.png",
+      "011.png"
+    ],
+    "resolution": [
+      518,
+      350
+    ],
+    "points": 80000,
+    "seconds": 23.53714519999994,
+    "peak_allocated_gib": 7.950863361358643,
+    "torch": "2.7.1+cu128",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "seed": 42,
+    "confidence_threshold": 5,
+    "ground_truth_used": false
+  },
+  "training": {
+    "steps": 12000,
+    "gaussians": 80000,
+    "seconds": 83.23976729999958,
+    "peak_allocated_gib": 0.08116388320922852,
+    "training_view_psnr": 20.774935086568195,
+    "psnr_per_view": [
+      17.415550231933594,
+      19.123079299926758,
+      17.74964141845703,
+      17.153648376464844,
+      16.022321701049805,
+      22.453125,
+      25.472829818725586,
+      22.03507423400879,
+      24.276208877563477,
+      24.682476043701172,
+      24.17457389831543,
+      18.740692138671875
+    ],
+    "held_out_evaluation": false,
+    "recipe": "fixed-count anisotropic 3DGS; RGB degree 0; L1 + local SSIM; fixed VGGT cameras",
+    "learning_rates": {
+      "means": 0.00010736926057004679,
+      "scales": 0.004,
+      "quats": 0.001,
+      "opacities": 0.03,
+      "colors": 0.01
+    }
+  }
+}

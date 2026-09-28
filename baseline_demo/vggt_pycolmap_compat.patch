@@ -1,0 +1,36 @@
+diff --git a/vggt/dependency/np_to_pycolmap.py b/vggt/dependency/np_to_pycolmap.py
+index 61ea578..2bd508f 100644
+--- a/vggt/dependency/np_to_pycolmap.py
++++ b/vggt/dependency/np_to_pycolmap.py
+@@ -134,10 +134,13 @@ def batch_np_matrix_to_pycolmap(
+ 
+         try:
+             image.points2D = pycolmap.ListPoint2D(points2D_list)
+-            image.registered = True
++            # PyCOLMAP 3.11 infers registration from the supplied camera pose.
++            if hasattr(image, "registered"):
++                image.registered = True
+         except:
+             print(f"frame {fidx + 1} is out of BA")
+-            image.registered = False
++            if hasattr(image, "registered"):
++                image.registered = False
+ 
+         # add image
+         reconstruction.add_image(image)
+@@ -279,10 +282,13 @@ def batch_np_matrix_to_pycolmap_wo_track(
+ 
+         try:
+             image.points2D = pycolmap.ListPoint2D(points2D_list)
+-            image.registered = True
++            # PyCOLMAP 3.11 infers registration from the supplied camera pose.
++            if hasattr(image, "registered"):
++                image.registered = True
+         except:
+             print(f"frame {fidx + 1} does not have any points")
+-            image.registered = False
++            if hasattr(image, "registered"):
++                image.registered = False
+ 
+         # add image
+         reconstruction.add_image(image)

@@ -1,0 +1,6 @@
+[submodule "baseline_demo/vendor/vggt"]
+	path = baseline_demo/vendor/vggt
+	url = https://github.com/facebookresearch/vggt.git
+[submodule "baseline_demo/vendor/gsplat"]
+	path = baseline_demo/vendor/gsplat
+	url = https://github.com/nerfstudio-project/gsplat.git
